@@ -1,0 +1,37 @@
+
+
+.banner {
+    text-align: center;
+    margin-top: 0;
+    padding: 120px 0 35px 0;
+    background: url('../assets/img/Background.jpeg') no-repeat center center fixed;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 100%; /* Ensure full width */
+    min-height: calc(45vh - 100px);
+  }
+  
+  .about {
+   border-radius: 10px;
+   text-align: left;
+   
+  }
+  
+  .banner h1{
+    font-size: 35px;
+    font-weight: 600;
+    /* color: #111447; */
+    color: white;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    display: block;
+  }
+  
+  
+  
+ 
+  
+  
+ 
+  

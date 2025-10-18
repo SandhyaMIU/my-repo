@@ -1,0 +1,154 @@
+.edu{
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto; 
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  /* background: url('../assets/img/bg.jpeg') no-repeat center center fixed; */
+  /* background-color: rgb(227, 218, 218); */
+  background-color: white;
+  background-size: cover;
+  color: #ffffff; 
+}
+
+
+
+
+
+
+
+
+.edu h2 {
+  color: #2a32d2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #111447;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-left,
+.timeline-right {
+  width: 50%;
+  padding: 20px;
+  background: #9f9fa5;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-left {
+  text-align: right;
+  padding-right: 30px;
+  margin-right: 5%; /* Add margin to separate from center line */
+  width: 500px;
+  /* margin-top: 5%; */
+}
+
+.timeline-right {
+  padding-left: 30px;
+  margin-left: 5%; /* Add margin to separate from center line */
+  width: 500px;
+  
+}
+
+.timeline-left::before,
+.timeline-right::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #111447;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-left::before {
+  right: -20px;
+}
+
+.timeline-right::before {
+  left: -20px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111447;
+  /* background: url('../assets/img/bg.jpeg'); */
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 18px;
+}
+
+.timeline-item:nth-child(odd) .timeline-left {
+  order: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-right {
+  order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-left {
+  order: 3;
+}
+
+.timeline-item:nth-child(even) .timeline-right {
+  order: 4;
+}
+
+.timeline-left h6,
+.timeline-right h6 {
+  /* margin: 10px 0; */
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+}
+
+.timeline-left .duration {
+  display: block;
+  margin-top: 5px;
+  color: #2c2020;
+}
+
+
+.timeline-right h5 {
+  margin: 10px 0;
+  color: black;
+}
+
+.edu p{
+  color: black;
+  font-weight: bold;
+}

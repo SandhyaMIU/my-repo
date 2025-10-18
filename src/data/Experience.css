@@ -1,0 +1,155 @@
+.work-experience {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto; /* Center the timeline on the page */
+}
+
+.work-experience h2 {
+  color: #2a32d2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ff0077;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-left,
+.timeline-right {
+  width: 50%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-left {
+  text-align: right;
+  padding-right: 30px;
+  margin-right: 5%; /* Add margin to separate from center line */
+  width: 500px;
+  /* margin-top: 5%; */
+}
+
+.timeline-right {
+  padding-left: 30px;
+  margin-left: 5%; /* Add margin to separate from center line */
+  width: 500px;
+  
+}
+
+.timeline-left::before,
+.timeline-right::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #ff0077;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-left::before {
+  right: -20px;
+}
+
+.timeline-right::before {
+  left: -20px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff0077;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 18px;
+}
+
+.timeline-item:nth-child(odd) .timeline-left {
+  order: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-right {
+  order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-left {
+  order: 3;
+}
+
+.timeline-item:nth-child(even) .timeline-right {
+  order: 4;
+}
+
+.timeline-left h3,
+.timeline-right p {
+  margin: 10px 0;
+  font-style: italic;
+  color: black;
+}
+
+.timeline-right h4 {
+  margin: 10px 0;
+  color: black;
+}
+
+.timeline-left .duration {
+  display: block;
+  margin-top: 5px;
+  color: #777;
+}
+
+.linkedin-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease; 
+}
+
+
+
+.explore-more {
+  font-size: 18px;
+  font-weight: bold;
+  color: #494747; 
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
